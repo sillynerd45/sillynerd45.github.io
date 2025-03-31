@@ -36856,7 +36856,7 @@ j=A.CJ(j)
 p=A.di(j,0,A.fv(j.ghE(),"count",t.S),A.n(j).i("X.E"))
 j=j.ghE()
 s=2
-return A.A(A.b1Q("CANXPD247HUDWUMBE3NEENEZDM56YMPBWVCJTE467CENHOCP4YRZS2PK","https://soroban-testnet.stellar.org:443",A.eA(B.cD,A.h2(p,j,j))),$async$afm)
+return A.A(A.b1Q("CCRGHTR55IXRJVLJTJ5RJ7JVSWH3ETTNBYJPW2MTVROMKYVJX5X6IFSK","https://soroban-testnet.stellar.org:443",A.eA(B.cD,A.h2(p,j,j))),$async$afm)
 case 2:s=3
 return A.A($.bq().aFK(t.cZ),$async$afm)
 case 3:if($.a4==null)A.bcW()
@@ -124220,14 +124220,17 @@ return A.y($async$rO,r)}}
 A.alL.prototype={
 $2(a,b){var s,r,q,p,o,n=null,m={}
 m.a=m.b="-"
+m.c=!1
 s=this.a
 r=s.c
 if(r instanceof A.n3){m.b=r.c
 m.a="Asking for Consultation"
+m.c=!0
 q="Accept"}else if(r instanceof A.n1){m.b=r.a
 m.a="Waiting for Log Data"
 q="\u231b"}else if(r instanceof A.n2){m.b=r.a
 m.a="Data Available"
+m.c=!0
 q="Open Health Logs"}else if(r instanceof A.op){m.b=r.a
 m.a="Consultation Done"
 q="\u2714\ufe0f"}else q="-"
@@ -124245,10 +124248,12 @@ $1(a){var s=null,r=this.a.a,q=A.D(a).p2.w
 return A.aC(r,1,s,s,s,q==null?s:q.bq(B.w,B.L),B.ai,s,s,s)},
 $S:80}
 A.alK.prototype={
-$0(){var s=0,r=A.z(t.H),q=this
+$0(){var s=0,r=A.z(t.H),q,p=this,o
 var $async$$0=A.v(function(a,b){if(a===1)return A.w(b,r)
-while(true)switch(s){case 0:q.b.rO(q.c,q.a.b)
-return A.x(null,r)}})
+while(true)switch(s){case 0:o=p.a
+if(!o.c){s=1
+break}p.b.rO(p.c,o.b)
+case 1:return A.x(q,r)}})
 return A.y($async$$0,r)},
 $S:9}
 A.alM.prototype={
